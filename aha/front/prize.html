@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>抽奖小程序总结 | AHA-uniapp项目指南</title>
+    <meta name="description" content="Technology pursues art and art challenges technology">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="icon" href="./hero.png">
+    
+    <link rel="preload" href="/document/assets/css/0.styles.e5289fa1.css" as="style"><link rel="preload" href="/document/assets/js/app.3d2e3ff9.js" as="script"><link rel="preload" href="/document/assets/js/3.b3d74ef6.js" as="script"><link rel="preload" href="/document/assets/js/1.548067c8.js" as="script"><link rel="preload" href="/document/assets/js/19.ea5586e8.js" as="script"><link rel="prefetch" href="/document/assets/js/10.8415833d.js"><link rel="prefetch" href="/document/assets/js/11.60614edf.js"><link rel="prefetch" href="/document/assets/js/12.1c9b76dd.js"><link rel="prefetch" href="/document/assets/js/13.affd0f30.js"><link rel="prefetch" href="/document/assets/js/14.ecbdb331.js"><link rel="prefetch" href="/document/assets/js/15.35053f9f.js"><link rel="prefetch" href="/document/assets/js/16.999a1852.js"><link rel="prefetch" href="/document/assets/js/17.57674d0d.js"><link rel="prefetch" href="/document/assets/js/18.bcf679be.js"><link rel="prefetch" href="/document/assets/js/20.2838b2cf.js"><link rel="prefetch" href="/document/assets/js/21.542de3cc.js"><link rel="prefetch" href="/document/assets/js/22.72e6f0a6.js"><link rel="prefetch" href="/document/assets/js/23.0d261c5d.js"><link rel="prefetch" href="/document/assets/js/24.27e357b6.js"><link rel="prefetch" href="/document/assets/js/25.1d0401e2.js"><link rel="prefetch" href="/document/assets/js/26.54bb6ff9.js"><link rel="prefetch" href="/document/assets/js/27.41645315.js"><link rel="prefetch" href="/document/assets/js/28.17e6b5a9.js"><link rel="prefetch" href="/document/assets/js/29.b017413b.js"><link rel="prefetch" href="/document/assets/js/30.892aba32.js"><link rel="prefetch" href="/document/assets/js/31.abd0b240.js"><link rel="prefetch" href="/document/assets/js/32.a51cbf4a.js"><link rel="prefetch" href="/document/assets/js/33.d7ae0878.js"><link rel="prefetch" href="/document/assets/js/34.1cff083e.js"><link rel="prefetch" href="/document/assets/js/35.c7d6813a.js"><link rel="prefetch" href="/document/assets/js/36.1f232d71.js"><link rel="prefetch" href="/document/assets/js/37.540a0abe.js"><link rel="prefetch" href="/document/assets/js/38.93514d02.js"><link rel="prefetch" href="/document/assets/js/4.6e82a290.js"><link rel="prefetch" href="/document/assets/js/5.dadf3afc.js"><link rel="prefetch" href="/document/assets/js/6.2393e597.js"><link rel="prefetch" href="/document/assets/js/7.f3f6714f.js"><link rel="prefetch" href="/document/assets/js/8.1791c85f.js"><link rel="prefetch" href="/document/assets/js/9.8f5f4ca6.js">
+    <link rel="stylesheet" href="/document/assets/css/0.styles.e5289fa1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/document/" class="home-link router-link-active"><!----> <span class="site-name">AHA-uniapp项目指南</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/document/aha/info/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-uniapp
+</a></div><div class="nav-item"><a href="/document/aha-element/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-element
+</a></div><div class="nav-item"><a href="/document/jiti-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  集体经济
+</a></div><div class="nav-item"><a href="/document/kk-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  夸夸uniapp
+</a></div><div class="nav-item"><a href="/document/other/" class="nav-link"><i class="iconfont undefined"></i>
+  其他项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/about/info/write.html" class="nav-link"><i class="iconfont undefined"></i>
+  文档介绍
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/ahateam/aha-uniapp.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  项目GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/document/aha/info/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-uniapp
+</a></div><div class="nav-item"><a href="/document/aha-element/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-element
+</a></div><div class="nav-item"><a href="/document/jiti-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  集体经济
+</a></div><div class="nav-item"><a href="/document/kk-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  夸夸uniapp
+</a></div><div class="nav-item"><a href="/document/other/" class="nav-link"><i class="iconfont undefined"></i>
+  其他项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/about/info/write.html" class="nav-link"><i class="iconfont undefined"></i>
+  文档介绍
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/ahateam/aha-uniapp.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  项目GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/document/aha/normal/normal.html" class="sidebar-link">小红椒前端AHA团队代码规范</a></li><li><a href="/document/aha/info/" class="sidebar-link">aha-uniapp 框架指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>前端文档</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/document/aha/front/example.html" class="sidebar-link">前端技术文档示例</a></li><li><a href="/document/aha/front/prize.html" class="active sidebar-link">抽奖小程序总结</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/document/aha/front/test.html" class="sidebar-link">测试</a></li><li><a href="/document/aha/front/vueUni.html" class="sidebar-link">前端技术文档示例</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>后端文档</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>抽奖小程序总结</h1> <hr> <div data-v-362e684e><i class="iconfont reco-account" data-v-362e684e><span data-v-362e684e>huqian</span></i> <i class="iconfont reco-date" data-v-362e684e><span data-v-362e684e>2019-12-11</span></i> <!----> <!----></div></div> <div class="content__default"><h3 id="小程序开发重难点总结"><a href="#小程序开发重难点总结" aria-hidden="true" class="header-anchor">#</a> 小程序开发重难点总结</h3> <h4 id="一、用户登录"><a href="#一、用户登录" aria-hidden="true" class="header-anchor">#</a> 一、用户登录</h4> <ul><li><p>使用 button 组件，并将 open-type 指定为 getUserInfo 类型，获取用户基本信息</p></li> <li><p>获取用户信息需要先使用 uni.login 获取登录用户的code，再调用后端接口，请求腾讯服务器换取用户openId ，最后调用 uni.getUserInfo 获取用户信息（昵称、头像等）</p></li></ul> <div class="language-java extra-class"><pre class="language-java"><code><span class="token operator">*</span><span class="token operator">*</span> 后端通过用户code换取用户openId代码（以下为微信小程序请求，不同小程序会有部分差异）<span class="token operator">*</span><span class="token operator">*</span>
+	<span class="token comment">// 创建Httpclient对象</span>
+    <span class="token class-name">CloseableHttpClient</span> httpclient <span class="token operator">=</span> <span class="token class-name">HttpClients</span><span class="token punctuation">.</span><span class="token function">createDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 定义请求的参数</span>
+    <span class="token class-name">URI</span> uri <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URIBuilder</span><span class="token punctuation">(</span><span class="token string">&quot;https://api.weixin.qq.com/sns/jscode2session?appid=&quot;</span><span class="token operator">+</span>appid<span class="token operator">+</span><span class="token string">&quot;&amp;secret=&quot;</span><span class="token operator">+</span>secret<span class="token operator">+</span><span class="token string">&quot;&amp;js_code=&quot;</span><span class="token operator">+</span>js_code<span class="token operator">+</span><span class="token string">&quot;&amp;grant_type=&quot;</span><span class="token operator">+</span>grant_type<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 创建http GET请求</span>
+    <span class="token class-name">HttpGet</span> httpGet <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HttpGet</span><span class="token punctuation">(</span>uri<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//response 对象</span>
+    <span class="token class-name">CloseableHttpResponse</span> response <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token class-name">String</span> content <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token comment">// 执行http get请求</span>
+        response <span class="token operator">=</span> httpclient<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span>httpGet<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 判断返回状态是否为200</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token function">getStatusLine</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getStatusCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            content <span class="token operator">=</span> <span class="token class-name">EntityUtils</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span><span class="token function">getEntity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;UTF-8&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token class-name">JSONObject</span><span class="token punctuation">.</span><span class="token function">parseObject</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>response <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            response<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        httpclient<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h4 id="二、下拉刷新"><a href="#二、下拉刷新" aria-hidden="true" class="header-anchor">#</a> 二、下拉刷新</h4> <ul><li>调用 onPullDownRefresh() 生命周期方法。该方法执行时，需要先将原数据进行初始化再调用查询接口，否则会出现数据重复现象，查询接口调用结束后需要调用 uni.stopPullDownRefresh() 方法停止刷新</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>    <span class="token comment">//下拉刷新</span>
+    <span class="token function">onPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>pageOver <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>prizeList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>page <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token keyword">let</span> cnt <span class="token operator">=</span> <span class="token punctuation">{</span>
+            count<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+            offset<span class="token punctuation">:</span> <span class="token number">0</span>
+    	<span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPrizeList</span><span class="token punctuation">(</span>cnt<span class="token punctuation">)</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    		uni<span class="token punctuation">.</span><span class="token function">stopPullDownRefresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h4 id="三、触底加载"><a href="#三、触底加载" aria-hidden="true" class="header-anchor">#</a> 三、触底加载</h4> <ul><li>调用 onReachBottom() 生命周期方法。将页码+1，修改传入查询接口中的参数，再次调用查询接口</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>		<span class="token function">onReachBottom</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>pageOver<span class="token punctuation">)</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>pageOver<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span>page <span class="token operator">+=</span> <span class="token number">1</span>
+				<span class="token keyword">let</span> cnt <span class="token operator">=</span> <span class="token punctuation">{</span>
+					count<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token punctuation">,</span>
+					offset<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>page <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>count
+				<span class="token punctuation">}</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getPrizeList</span><span class="token punctuation">(</span>cnt<span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+</code></pre></div><h4 id="四、页面分享"><a href="#四、页面分享" aria-hidden="true" class="header-anchor">#</a> 四、页面分享</h4> <ul><li>调用 onShareAppMessage() 生命周期方法</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>		<span class="token function">onShareAppMessage</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">let</span> pages <span class="token operator">=</span> <span class="token function">getCurrentPages</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">//获取加载的页面</span>
+			<span class="token keyword">let</span> currentPage <span class="token operator">=</span> pages<span class="token punctuation">[</span>pages<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token comment">//获取当前页面的对象</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>currentPage<span class="token punctuation">)</span>
+			<span class="token keyword">let</span> url <span class="token operator">=</span> currentPage<span class="token punctuation">.</span>route <span class="token comment">//当前页面url</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>url <span class="token operator">==</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				url <span class="token operator">=</span> currentPage<span class="token punctuation">.</span>__route__
+			<span class="token punctuation">}</span>
+			<span class="token keyword">let</span> options <span class="token operator">=</span> currentPage<span class="token punctuation">.</span>options <span class="token comment">//如果要获取url中所带的参数可以查看options </span>
+			<span class="token keyword">let</span> id <span class="token operator">=</span> options<span class="token punctuation">.</span>id
+			<span class="token keyword">let</span> src <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>url<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">?id=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>src<span class="token punctuation">)</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>from <span class="token operator">==</span> <span class="token string">'button'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 来自页面内分享按钮</span>
+				console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span>
+				title<span class="token punctuation">:</span> <span class="token string">'抽奖'</span><span class="token punctuation">,</span>
+				path<span class="token punctuation">:</span> src
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+</code></pre></div><h4 id="五、图片上传"><a href="#五、图片上传" aria-hidden="true" class="header-anchor">#</a> 五、图片上传</h4> <ul><li>先调用 uni.chooseImage() 方法，从本地相册中选择图片，再调用 uni.uploadFile() 方法，将选择的图片上传至服务器</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>			<span class="token comment">//相册添加图片</span>
+			<span class="token function">addImgs</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">let</span> tiemr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+				<span class="token keyword">let</span> address <span class="token operator">=</span> tiemr<span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;&quot;</span> <span class="token operator">+</span> <span class="token punctuation">(</span>tiemr<span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;&quot;</span> <span class="token operator">+</span> tiemr<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				address <span class="token operator">=</span><span class="token string">'image/'</span><span class="token operator">+</span>address<span class="token operator">+</span><span class="token string">'/'</span>
+				uni<span class="token punctuation">.</span><span class="token function">chooseImage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+					count<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+					sizeType<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'compressed'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+					sourceType<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'album'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+					<span class="token function-variable function">success</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+						<span class="token keyword">this</span><span class="token punctuation">.</span>showPopup <span class="token operator">=</span> <span class="token boolean">false</span>
+						<span class="token keyword">let</span> imageSrc <span class="token operator">=</span> res<span class="token punctuation">.</span>tempFilePaths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+						<span class="token keyword">let</span> str <span class="token operator">=</span> res<span class="token punctuation">.</span>tempFilePaths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>tempFilePaths<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+						<span class="token keyword">let</span> nameStr <span class="token operator">=</span>address<span class="token operator">+</span> tiemr<span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span>str
+						<span class="token comment">// nameStr =  res.tempFilePaths[0]</span>
+						console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nameStr<span class="token punctuation">)</span>
+						uni<span class="token punctuation">.</span><span class="token function">showLoading</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						    title<span class="token punctuation">:</span> <span class="token string">'上传中'</span>
+						<span class="token punctuation">}</span><span class="token punctuation">)</span>
+						<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">upLoadImg</span><span class="token punctuation">(</span>imageSrc<span class="token punctuation">,</span>nameStr<span class="token punctuation">,</span>e<span class="token punctuation">)</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token function-variable function">fail</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						title<span class="token punctuation">:</span><span class="token string">'已取消'</span><span class="token punctuation">,</span>
+						icon<span class="token punctuation">:</span><span class="token string">'none'</span>
+					<span class="token punctuation">}</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token comment">// 上传至服务器</span>
+			<span class="token function">upLoadImg</span><span class="token punctuation">(</span><span class="token parameter">imageSrc<span class="token punctuation">,</span>nameStr<span class="token punctuation">,</span>e</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				uni<span class="token punctuation">.</span><span class="token function">uploadFile</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+						url<span class="token punctuation">:</span> <span class="token string">'https://weapp-xhj.oss-cn-hangzhou.aliyuncs.com'</span><span class="token punctuation">,</span>
+						filePath<span class="token punctuation">:</span> imageSrc<span class="token punctuation">,</span>
+						fileType<span class="token punctuation">:</span> <span class="token string">'image'</span><span class="token punctuation">,</span>
+						name<span class="token punctuation">:</span> <span class="token string">'file'</span><span class="token punctuation">,</span>
+						formData<span class="token punctuation">:</span><span class="token punctuation">{</span>
+							name<span class="token punctuation">:</span>nameStr<span class="token punctuation">,</span>
+							<span class="token string">'key'</span> <span class="token punctuation">:</span> nameStr<span class="token punctuation">,</span>
+							<span class="token string">'policy'</span><span class="token punctuation">:</span> <span class="token string">'eyJleHBpcmF0aW9uIjoiMjAyMi0wMS0wMVQxMjowMDowMC4wMDBaIiwiY29uZGl0aW9ucyI6W1siY29udGVudC1sZW5ndGgtcmFuZ2UiLDAsMTA0ODU3NjAwMF1dfQ=='</span><span class="token punctuation">,</span>
+							<span class="token string">'OSSAccessKeyId'</span><span class="token punctuation">:</span> <span class="token string">'LTAIJ9mYIjuW54Cj'</span><span class="token punctuation">,</span> 
+							<span class="token string">'success_action_status'</span> <span class="token punctuation">:</span> <span class="token string">'200'</span><span class="token punctuation">,</span> 
+							<span class="token comment">//让服务端返回200,不然，默认会返回204</span>
+							<span class="token string">'signature'</span><span class="token punctuation">:</span> <span class="token string">'kgQ5n4s0oKpFHp35EI12CuTFvVM='</span><span class="token punctuation">,</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token function-variable function">success</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+						console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+						
+						uni<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+						uni<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+							title<span class="token punctuation">:</span> <span class="token string">'上传成功'</span><span class="token punctuation">,</span>
+							icon<span class="token punctuation">:</span> <span class="token string">'success'</span><span class="token punctuation">,</span>
+							duration<span class="token punctuation">:</span> <span class="token number">1000</span>
+						<span class="token punctuation">}</span><span class="token punctuation">)</span>
+						<span class="token keyword">if</span><span class="token punctuation">(</span>e<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>imgsrc1 <span class="token operator">=</span> <span class="token string">'https://weapp-xhj.oss-cn-hangzhou.aliyuncs.com/'</span><span class="token operator">+</span>nameStr
+						<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>e<span class="token operator">==</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>imgsrc2 <span class="token operator">=</span> <span class="token string">'https://weapp-xhj.oss-cn-hangzhou.aliyuncs.com/'</span><span class="token operator">+</span>nameStr
+						<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>e<span class="token operator">==</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>imgsrc3 <span class="token operator">=</span> <span class="token string">'https://weapp-xhj.oss-cn-hangzhou.aliyuncs.com/'</span><span class="token operator">+</span>nameStr
+						<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+							<span class="token keyword">this</span><span class="token punctuation">.</span>imgList<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'https://weapp-xhj.oss-cn-hangzhou.aliyuncs.com/'</span><span class="token operator">+</span>nameStr<span class="token punctuation">)</span>
+						<span class="token punctuation">}</span>
+						console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>imgList<span class="token punctuation">)</span>
+					<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token function-variable function">fail</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+						console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'uploadImage fail'</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+						uni<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+							content<span class="token punctuation">:</span> err<span class="token punctuation">.</span>errMsg<span class="token punctuation">,</span>
+							showCancel<span class="token punctuation">:</span> <span class="token boolean">false</span>
+						<span class="token punctuation">}</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+</code></pre></div><h3 id="微信小程序过审注意事项"><a href="#微信小程序过审注意事项" aria-hidden="true" class="header-anchor">#</a> 微信小程序过审注意事项</h3> <ol><li><p>小程序本身无bug，真机调试可正常运行</p></li> <li><p>小程序项目中 commen/url.js 文件中的 baseUrl 确认已换为服务器地址</p></li> <li><p>登录微信公众平台，在 开发-&gt;开发设置 中配置服务器域名和业务域名（例如： https://topoints.cn ），如有上传功能，还需配置 uploadFile 合法域名（地址为前端代码中的文件上传地址，如 https://weapp-xhj.oss-cn-hangzhou.aliyuncs.com ）</p></li> <li><p>小程序不能强行要求用户登录， 在用户未登录状态了解体验小程序功能后，再要求用户进行帐号登录。在登录过程中，用户可以选择取消，而不是只能登录或者退出小程序</p></li> <li><p>小程序正式上线时，必须清空所有测试数据，插入正式数据</p></li> <li><p>具体行为规范参考： https://developers.weixin.qq.com/community/operate/doc/000640bb8441b82900e89f48351401</p></li></ol> <h3 id="头条小程序过审注意事项"><a href="#头条小程序过审注意事项" aria-hidden="true" class="header-anchor">#</a> 头条小程序过审注意事项</h3> <ol><li>参考微信小程序过审注意事项1-5</li> <li>登录状态下进入小程序，弹出获取用户头像、昵称等信息的弹窗，选择允许，能够正常拿到头像和名字，小程序中的头像和名字显示正常，授权弹窗只能出现一次，多次出现时bug；当用户选择不允许时，能够再次掉起授权弹窗。目前解决方案如下：用户拒绝授权后，再次点击登录将调起设置，让用户手动开启权限，开启成功后重新调用登录方法，登录小程序</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>            uni<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                uni<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    title<span class="token punctuation">:</span> <span class="token string">'开启权限'</span><span class="token punctuation">,</span>
+                    content<span class="token punctuation">:</span> <span class="token string">'是否前往开启权限'</span><span class="token punctuation">,</span>
+                    <span class="token function-variable function">success</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>confirm<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                            <span class="token comment">// 点击确认</span>
+                            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;点击确认&quot;</span><span class="token punctuation">)</span>
+                                uni<span class="token punctuation">.</span><span class="token function">openSetting</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                                    <span class="token function-variable function">success</span><span class="token punctuation">:</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                                        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getUserCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                                    <span class="token punctuation">}</span>
+                                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+                                <span class="token comment">// this.getUserCode()</span>
+                        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>cancel<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                            <span class="token comment">// 点击取消</span>
+                            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;点击取消&quot;</span><span class="token punctuation">)</span>
+                                <span class="token keyword">return</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p><img src="https://ahateam.github.io/document/aha/front/20191212112504.png" alt="20191212112504"></p></div> <!----> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/document/aha/front/example.html" class="prev">
+          前端技术文档示例
+        </a></span> <span class="next"><a href="/document/aha/front/test.html">
+          测试
+        </a>
+        →
+      </span></p></div> </main> <div class="valine-wrapper" data-v-5029e45b><div id="valine" data-v-5029e45b></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-cd623d78 data-v-cd623d78><i class="iconfont reco-up" data-v-cd623d78></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/document/assets/js/app.3d2e3ff9.js" defer></script><script src="/document/assets/js/3.b3d74ef6.js" defer></script><script src="/document/assets/js/1.548067c8.js" defer></script><script src="/document/assets/js/19.ea5586e8.js" defer></script>
+  </body>
+</html>

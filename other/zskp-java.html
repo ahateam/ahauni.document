@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>掌上科普项目后端服务端对接 | AHA-uniapp项目指南</title>
+    <meta name="description" content="Technology pursues art and art challenges technology">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="icon" href="./hero.png">
+    
+    <link rel="preload" href="/document/assets/css/0.styles.e5289fa1.css" as="style"><link rel="preload" href="/document/assets/js/app.3d2e3ff9.js" as="script"><link rel="preload" href="/document/assets/js/3.b3d74ef6.js" as="script"><link rel="preload" href="/document/assets/js/1.548067c8.js" as="script"><link rel="preload" href="/document/assets/js/36.1f232d71.js" as="script"><link rel="prefetch" href="/document/assets/js/10.8415833d.js"><link rel="prefetch" href="/document/assets/js/11.60614edf.js"><link rel="prefetch" href="/document/assets/js/12.1c9b76dd.js"><link rel="prefetch" href="/document/assets/js/13.affd0f30.js"><link rel="prefetch" href="/document/assets/js/14.ecbdb331.js"><link rel="prefetch" href="/document/assets/js/15.35053f9f.js"><link rel="prefetch" href="/document/assets/js/16.999a1852.js"><link rel="prefetch" href="/document/assets/js/17.57674d0d.js"><link rel="prefetch" href="/document/assets/js/18.bcf679be.js"><link rel="prefetch" href="/document/assets/js/19.ea5586e8.js"><link rel="prefetch" href="/document/assets/js/20.2838b2cf.js"><link rel="prefetch" href="/document/assets/js/21.542de3cc.js"><link rel="prefetch" href="/document/assets/js/22.72e6f0a6.js"><link rel="prefetch" href="/document/assets/js/23.0d261c5d.js"><link rel="prefetch" href="/document/assets/js/24.27e357b6.js"><link rel="prefetch" href="/document/assets/js/25.1d0401e2.js"><link rel="prefetch" href="/document/assets/js/26.54bb6ff9.js"><link rel="prefetch" href="/document/assets/js/27.41645315.js"><link rel="prefetch" href="/document/assets/js/28.17e6b5a9.js"><link rel="prefetch" href="/document/assets/js/29.b017413b.js"><link rel="prefetch" href="/document/assets/js/30.892aba32.js"><link rel="prefetch" href="/document/assets/js/31.abd0b240.js"><link rel="prefetch" href="/document/assets/js/32.a51cbf4a.js"><link rel="prefetch" href="/document/assets/js/33.d7ae0878.js"><link rel="prefetch" href="/document/assets/js/34.1cff083e.js"><link rel="prefetch" href="/document/assets/js/35.c7d6813a.js"><link rel="prefetch" href="/document/assets/js/37.540a0abe.js"><link rel="prefetch" href="/document/assets/js/38.93514d02.js"><link rel="prefetch" href="/document/assets/js/4.6e82a290.js"><link rel="prefetch" href="/document/assets/js/5.dadf3afc.js"><link rel="prefetch" href="/document/assets/js/6.2393e597.js"><link rel="prefetch" href="/document/assets/js/7.f3f6714f.js"><link rel="prefetch" href="/document/assets/js/8.1791c85f.js"><link rel="prefetch" href="/document/assets/js/9.8f5f4ca6.js">
+    <link rel="stylesheet" href="/document/assets/css/0.styles.e5289fa1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/document/" class="home-link router-link-active"><!----> <span class="site-name">AHA-uniapp项目指南</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/document/aha/info/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-uniapp
+</a></div><div class="nav-item"><a href="/document/aha-element/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-element
+</a></div><div class="nav-item"><a href="/document/jiti-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  集体经济
+</a></div><div class="nav-item"><a href="/document/kk-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  夸夸uniapp
+</a></div><div class="nav-item"><a href="/document/other/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  其他项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/about/info/write.html" class="nav-link"><i class="iconfont undefined"></i>
+  文档介绍
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/ahateam/aha-uniapp.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  项目GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/document/aha/info/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-uniapp
+</a></div><div class="nav-item"><a href="/document/aha-element/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-element
+</a></div><div class="nav-item"><a href="/document/jiti-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  集体经济
+</a></div><div class="nav-item"><a href="/document/kk-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  夸夸uniapp
+</a></div><div class="nav-item"><a href="/document/other/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  其他项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/about/info/write.html" class="nav-link"><i class="iconfont undefined"></i>
+  文档介绍
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/ahateam/aha-uniapp.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  项目GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/document/other/caishui.html" class="sidebar-link">财税云第一次前端对接文档</a></li><li><a href="/document/other/zskp-java.html" class="active sidebar-link">掌上科普项目后端服务端对接</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/document/other/zskp-java.html#环境说明" class="sidebar-link">环境说明</a></li><li class="sidebar-sub-header"><a href="/document/other/zskp-java.html#准备工作" class="sidebar-link">准备工作</a></li><li class="sidebar-sub-header"><a href="/document/other/zskp-java.html#nginx安装和配置" class="sidebar-link">nginx安装和配置</a></li><li class="sidebar-sub-header"><a href="/document/other/zskp-java.html#java-8-安装和配置" class="sidebar-link">Java 8 安装和配置</a></li></ul></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>掌上科普项目后端服务端对接</h1> <hr> <div data-v-362e684e><i class="iconfont reco-account" data-v-362e684e><span data-v-362e684e>郑兴江</span></i> <i class="iconfont reco-date" data-v-362e684e><span data-v-362e684e>2019-11-20</span></i> <!----> <!----></div></div> <div class="content__default"><h2 id="环境说明"><a href="#环境说明" aria-hidden="true" class="header-anchor">#</a> 环境说明</h2> <p>CentOS 7.4
+nginx-1.14.0
+java 8
+firewalld</p> <h2 id="准备工作"><a href="#准备工作" aria-hidden="true" class="header-anchor">#</a> 准备工作</h2> <h3 id="更新yum"><a href="#更新yum" aria-hidden="true" class="header-anchor">#</a> 更新yum</h3> <div class="language- extra-class"><pre class="language-text"><code>yum -y update
+</code></pre></div><h3 id="安装nginx依赖项"><a href="#安装nginx依赖项" aria-hidden="true" class="header-anchor">#</a> 安装nginx依赖项</h3> <div class="language- extra-class"><pre class="language-text"><code>yum install -y wget vim gcc gcc-c++ pcre pcre-devel zlib zlib-devel openssl openssl-devel
+</code></pre></div><blockquote><p>拷贝libldap
+（CentOS默认安装路径不符，可能导致安装失败。因此需要再将libldap拷贝到新目录）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>cp -frp /usr/lib64/libldap* /usr/lib/
+</code></pre></div><h3 id="创建web服务用户组"><a href="#创建web服务用户组" aria-hidden="true" class="header-anchor">#</a> 创建web服务用户组</h3> <blockquote><p>（nginx，php等不同服务，需要使用相同的用户才能共享文件。因此我们创建web服务统一的用户组及用户：www组及www用户）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>cd /tmp
+groupadd www
+useradd -g www www
+</code></pre></div><h3 id="创建网站静态文件目录及java服务目录"><a href="#创建网站静态文件目录及java服务目录" aria-hidden="true" class="header-anchor">#</a> 创建网站静态文件目录及Java服务目录</h3> <blockquote><p>/var/www	静态文件目录（由nginx管理）
+/var/jar		Java服务目录（存放可执行jar包）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>mkdir /var/www/
+chown -R www:www /var/www
+
+mkdir /var/jar/
+chown -R www:www /var/jar
+
+</code></pre></div><h3 id="配置防火墙"><a href="#配置防火墙" aria-hidden="true" class="header-anchor">#</a> 配置防火墙</h3> <blockquote><p>CentOS 7.4 使用firewalld 而不是 iptable
+启用firewalld</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>systemctl start firewalld.service
+</code></pre></div><blockquote><p>打开80端口并重启</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>firewall-cmd --permanent --zone=public --add-port=80/tcp
+firewall-cmd --reload
+</code></pre></div><blockquote><p>firewalld 基本操作命令如下：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>打开80端口	firewall-cmd --permanent --zone=public --add-port=80/tcp
+			firewall-cmd --reload
+
+启动			systemctl start firewalld.service
+停止			systemctl stop firewalld.service
+重启			systemctl restart firewalld.service
+自启动		systemctl enable firewalld.service
+停止自启动	systemctl disable firewalld.service
+查看打开端口	firewall-cmd --zone=public --list-ports
+
+</code></pre></div><h2 id="nginx安装和配置"><a href="#nginx安装和配置" aria-hidden="true" class="header-anchor">#</a> nginx安装和配置</h2> <h3 id="安装nginx-1-14-0"><a href="#安装nginx-1-14-0" aria-hidden="true" class="header-anchor">#</a> 安装nginx-1.14.0</h3> <blockquote><p>安装到usr/local目录</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>cd /usr/local/
+wget http://nginx.org/download/nginx-1.14.0.tar.gz
+tar -zxvf nginx-1.14.0.tar.gz
+rm nginx-1.14.0.tar.gz
+cd nginx-1.14.0
+./configure --prefix=/usr/local/nginx --with-http_ssl_module
+make
+make install
+</code></pre></div><h3 id="配置nginx自启动"><a href="#配置nginx自启动" aria-hidden="true" class="header-anchor">#</a> 配置nginx自启动</h3> <blockquote><p>创建nginx服务配置文件</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>vim /usr/lib/systemd/system/nginx.service
+</code></pre></div><blockquote><p>编辑如下内容</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>[Unit]
+Description=nginx
+After=network.target
+[Service]
+Type=forking
+ExecStart=/usr/local/nginx/sbin/nginx
+ExecReload=/usr/local/nginx/sbin/nginx -s reload
+ExecStop=/usr/local/nginx/sbin/nginx -s stop
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target
+</code></pre></div><blockquote><p>设置nginx自启动</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>chmod 754 /usr/lib/systemd/system/nginx.service
+systemctl enable nginx.service
+systemctl restart nginx.service
+</code></pre></div><h3 id="nginx配置"><a href="#nginx配置" aria-hidden="true" class="header-anchor">#</a> nginx配置</h3> <blockquote><p>编辑配置文件( usr/local/nginx/conf/nginx.conf )</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>vim usr/local/nginx/conf/nginx.conf
+</code></pre></div><blockquote><p>修改nginx.conf中的用户，设置为web服务用户 www</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>user  www;
+</code></pre></div><blockquote><p>修改nginx.conf中的location配置，指向/var/www 目录</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>        location / {
+            root	/var/www;
+            index	index.html index.htm;
+        }
+
+        error_page	500 502 503 504  /50x.html;
+        location = /50x.html {
+            root	/var/www;
+        }
+</code></pre></div><blockquote><p>在nginx.conf 配置文件中将api子域名指向8080端口的 java web服务</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>        location /api {
+            proxy_pass http://localhost:8080;
+            proxy_redirect off;
+        }
+</code></pre></div><blockquote><p>完整nginx.conf 配置文件参考如下：</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>user  www;
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    sendfile        on;
+
+    keepalive_timeout  65;
+
+    server {
+    
+        listen       80;
+        server_name  localhost;
+        
+        location / {
+            root	/var/www;
+            index	index.html index.htm;
+        }
+        
+        location /api {
+            proxy_pass http://localhost:8080;
+            proxy_redirect off;
+        }
+        
+        error_page	500 502 503 504  /50x.html;
+        location = /50x.html {
+            root	/var/www;
+        }
+    }
+}
+
+</code></pre></div><h3 id="启用nginx服务"><a href="#启用nginx服务" aria-hidden="true" class="header-anchor">#</a> 启用nginx服务</h3> <blockquote><p>nginx常用命令</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>启动		service nginx start
+重启		service nginx restart
+停止		service nginx stop
+强制关闭	pkill nginx
+
+</code></pre></div><h2 id="java-8-安装和配置"><a href="#java-8-安装和配置" aria-hidden="true" class="header-anchor">#</a> Java 8 安装和配置</h2> <h3 id="先卸载已有java环境"><a href="#先卸载已有java环境" aria-hidden="true" class="header-anchor">#</a> 先卸载已有java环境</h3> <blockquote><p>安装之前先检查一下系统有没有自带jdk</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>rpm -qa |grep java
+rpm -qa |grep jdk
+rpm -qa |grep gcj
+</code></pre></div><blockquote><p>如果有安装可以使用如下命令批量卸载所有带有Java的文件</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>rpm -qa | grep java | xargs rpm -e --nodeps 
+</code></pre></div><h3 id="安装java-8"><a href="#安装java-8" aria-hidden="true" class="header-anchor">#</a> 安装java 8</h3> <blockquote><p>安装1.8.0的所有文件</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>yum install java-1.8.0-openjdk* -y
+</code></pre></div><blockquote><p>安装后用 java -version命令可查看版本（当前1.8.0_191）</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>java -version
+openjdk version &quot;1.8.0_191&quot;
+OpenJDK Runtime Environment (build 1.8.0_191-b12)
+OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
+</code></pre></div><h3 id="java优化和配置"><a href="#java优化和配置" aria-hidden="true" class="header-anchor">#</a> java优化和配置</h3> <blockquote><p>目前还没有配置环境变量和优化 java 内存配置</p></blockquote></div> <!----> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/document/other/caishui.html" class="prev">
+          财税云第一次前端对接文档
+        </a></span> <!----></p></div> </main> <div class="valine-wrapper" data-v-5029e45b><div id="valine" data-v-5029e45b></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-cd623d78 data-v-cd623d78><i class="iconfont reco-up" data-v-cd623d78></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/document/assets/js/app.3d2e3ff9.js" defer></script><script src="/document/assets/js/3.b3d74ef6.js" defer></script><script src="/document/assets/js/1.548067c8.js" defer></script><script src="/document/assets/js/36.1f232d71.js" defer></script>
+  </body>
+</html>

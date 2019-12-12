@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>内容模块文档/三方登录 | AHA-uniapp项目指南</title>
+    <meta name="description" content="Technology pursues art and art challenges technology">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="icon" href="./hero.png">
+    
+    <link rel="preload" href="/document/assets/css/0.styles.e5289fa1.css" as="style"><link rel="preload" href="/document/assets/js/app.3d2e3ff9.js" as="script"><link rel="preload" href="/document/assets/js/3.b3d74ef6.js" as="script"><link rel="preload" href="/document/assets/js/1.548067c8.js" as="script"><link rel="preload" href="/document/assets/js/16.999a1852.js" as="script"><link rel="prefetch" href="/document/assets/js/10.8415833d.js"><link rel="prefetch" href="/document/assets/js/11.60614edf.js"><link rel="prefetch" href="/document/assets/js/12.1c9b76dd.js"><link rel="prefetch" href="/document/assets/js/13.affd0f30.js"><link rel="prefetch" href="/document/assets/js/14.ecbdb331.js"><link rel="prefetch" href="/document/assets/js/15.35053f9f.js"><link rel="prefetch" href="/document/assets/js/17.57674d0d.js"><link rel="prefetch" href="/document/assets/js/18.bcf679be.js"><link rel="prefetch" href="/document/assets/js/19.ea5586e8.js"><link rel="prefetch" href="/document/assets/js/20.2838b2cf.js"><link rel="prefetch" href="/document/assets/js/21.542de3cc.js"><link rel="prefetch" href="/document/assets/js/22.72e6f0a6.js"><link rel="prefetch" href="/document/assets/js/23.0d261c5d.js"><link rel="prefetch" href="/document/assets/js/24.27e357b6.js"><link rel="prefetch" href="/document/assets/js/25.1d0401e2.js"><link rel="prefetch" href="/document/assets/js/26.54bb6ff9.js"><link rel="prefetch" href="/document/assets/js/27.41645315.js"><link rel="prefetch" href="/document/assets/js/28.17e6b5a9.js"><link rel="prefetch" href="/document/assets/js/29.b017413b.js"><link rel="prefetch" href="/document/assets/js/30.892aba32.js"><link rel="prefetch" href="/document/assets/js/31.abd0b240.js"><link rel="prefetch" href="/document/assets/js/32.a51cbf4a.js"><link rel="prefetch" href="/document/assets/js/33.d7ae0878.js"><link rel="prefetch" href="/document/assets/js/34.1cff083e.js"><link rel="prefetch" href="/document/assets/js/35.c7d6813a.js"><link rel="prefetch" href="/document/assets/js/36.1f232d71.js"><link rel="prefetch" href="/document/assets/js/37.540a0abe.js"><link rel="prefetch" href="/document/assets/js/38.93514d02.js"><link rel="prefetch" href="/document/assets/js/4.6e82a290.js"><link rel="prefetch" href="/document/assets/js/5.dadf3afc.js"><link rel="prefetch" href="/document/assets/js/6.2393e597.js"><link rel="prefetch" href="/document/assets/js/7.f3f6714f.js"><link rel="prefetch" href="/document/assets/js/8.1791c85f.js"><link rel="prefetch" href="/document/assets/js/9.8f5f4ca6.js">
+    <link rel="stylesheet" href="/document/assets/css/0.styles.e5289fa1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/document/" class="home-link router-link-active"><!----> <span class="site-name">AHA-uniapp项目指南</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/document/aha/info/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-uniapp
+</a></div><div class="nav-item"><a href="/document/aha-element/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-element
+</a></div><div class="nav-item"><a href="/document/jiti-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  集体经济
+</a></div><div class="nav-item"><a href="/document/kk-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  夸夸uniapp
+</a></div><div class="nav-item"><a href="/document/other/" class="nav-link"><i class="iconfont undefined"></i>
+  其他项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/about/info/write.html" class="nav-link"><i class="iconfont undefined"></i>
+  文档介绍
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/ahateam/aha-uniapp.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  项目GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/document/aha/info/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-uniapp
+</a></div><div class="nav-item"><a href="/document/aha-element/" class="nav-link"><i class="iconfont undefined"></i>
+  aha-element
+</a></div><div class="nav-item"><a href="/document/jiti-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  集体经济
+</a></div><div class="nav-item"><a href="/document/kk-uniapp/info/" class="nav-link"><i class="iconfont undefined"></i>
+  夸夸uniapp
+</a></div><div class="nav-item"><a href="/document/other/" class="nav-link"><i class="iconfont undefined"></i>
+  其他项目
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      关于项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/document/about/info/write.html" class="nav-link"><i class="iconfont undefined"></i>
+  文档介绍
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/ahateam/aha-uniapp.git" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont undefined"></i>
+  项目GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/document/aha/normal/normal.html" class="sidebar-link">小红椒前端AHA团队代码规范</a></li><li><a href="/document/aha/info/" class="sidebar-link">aha-uniapp 框架指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端文档</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>后端文档</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/document/aha/back/example.html" class="sidebar-link">小红椒后端交接文档</a></li><li><a href="/document/aha/back/contentModule.html" class="active sidebar-link">内容模块文档/三方登录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#使用技术" class="sidebar-link">使用技术</a></li><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#前言" class="sidebar-link">前言</a></li><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#数据库实体设计" class="sidebar-link">数据库实体设计</a></li><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#实现思路" class="sidebar-link">实现思路</a></li><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#相关代码" class="sidebar-link">相关代码</a></li><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#app端" class="sidebar-link">APP端</a></li><li class="sidebar-sub-header"><a href="/document/aha/back/contentModule.html#小程序端" class="sidebar-link">小程序端</a></li></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>内容模块文档/三方登录</h1> <hr> <div data-v-362e684e><i class="iconfont reco-account" data-v-362e684e><span data-v-362e684e>魏元</span></i> <i class="iconfont reco-date" data-v-362e684e><span data-v-362e684e>2019-12-11</span></i> <!----> <!----></div></div> <div class="content__default"><hr> <h2 id="使用技术"><a href="#使用技术" aria-hidden="true" class="header-anchor">#</a> 使用技术</h2> <hr> <ul><li><p>MySql</p></li> <li><p>TableStore</p></li> <li><p>java</p></li></ul> <hr> <h2 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h2> <p>1.内容模块主要是用户发布文章，帖子及其他文字图片视频</p> <p>2.评论主要是用户在内容下发布的文字</p> <p>3.回复主要是用户在评论下发布的文字</p> <p>4.点赞主要是用户对内容，评论，回复进行点赞</p> <h2 id="数据库实体设计"><a href="#数据库实体设计" aria-hidden="true" class="header-anchor">#</a> 数据库实体设计</h2> <p>内容实体：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+* 所属模块
+*/</span>
+<span class="token annotation punctuation">@RDSAnnID</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> orgModule<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 编号
+ */</span>
+<span class="token annotation punctuation">@RDSAnnID</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> id<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 创建时间
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TIME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Date</span> createTime<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 更新时间
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TIME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Date</span> updateTime<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 类型
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> type<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 状态
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> status<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 权利（会员，付费，等）
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> power<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 标题
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TEXT_NAME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> title<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 上传用户编号
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> upUserId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 上传专栏编号
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> upChannelId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 标签
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONObject</span> tags<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 数据
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> data<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 私密信息
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> proviteData<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 扩展信息，可用JSON格式自行扩展
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> ext<span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">User</span> user<span class="token punctuation">;</span><span class="token comment">//用户信息</span>
+<span class="token comment">/**
+ * 浏览量
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Integer</span> pageView<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 分享量
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Integer</span> shareNumber<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 真浏览量
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Integer</span> truePageView<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 是否显示浏览量
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> isPageView<span class="token punctuation">;</span>
+<span class="token comment">/*
+ * 作者
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TEXT_TITLE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> contentAuthor<span class="token punctuation">;</span>
+<span class="token comment">/*
+ * 来源
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> contentSource<span class="token punctuation">;</span>
+<span class="token comment">/*
+ * 摘要
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> contentRemark<span class="token punctuation">;</span>
+<span class="token comment">/*
+ * mp3
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> mp3Src<span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;不显示&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> ISPAGEVIEW_NO <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;显示&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> ISPAGEVIEW_YES <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;免费&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> RIGHT_FREE <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;付费&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> RIGHT_PAY <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;会员&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> RIGHT_MEMBER <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;会员付费&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> RIGHT_MEMBER_PAY <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;图文&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_ALUMB <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;音频&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_AUDIO <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;短视频&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_VIDEO_CLIP <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;视频&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_VIDEO <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;直播&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_LIVE <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;纯文本&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_H5 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;帖子&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_POST <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;集合&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_SET <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;活动&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> TYPE_ACTIVITY <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;待审核&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_DRAFT <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;未通过审核&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_NORMAL <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已关闭&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_CLOSED <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已发布&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_DELETED <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;评论封禁&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_CLOSEREPLY <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+
+</code></pre></div><hr> <p>评论实体（TableStore版）：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+* 分片编号，MD5(id)，避免数据热点
+*/</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK1<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> _id<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 回复所属对象编号
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK2<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> ownerId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 序列编号（自增）
+ */</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK3<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">,</span> AUTO_INCREMENT <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> sequenceId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 创建时间
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Date</span> createTime<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 状态
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> status<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 上传用户编号
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> upUserId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 被@的用户编号
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> atUserId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 被@的用户名称
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> atUserName<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 标题
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> title<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 文本（可存html信息）
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> text<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 扩展信息，可用JSON格式自行扩展
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> ext<span class="token punctuation">;</span>
+
+<span class="token comment">/////////////////////////////////////////////</span>
+<span class="token comment">/////////////////////////////////////////////</span>
+<span class="token comment">/////////////////////////////////////////////</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;未审核&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_UNEXAMINED <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已通过&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_ACCEPT <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已回绝&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_REJECT <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre></div><p>MySQL版：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token annotation punctuation">@RDSAnnID</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> sequenceId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 回复所属对象编号
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> ownerId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 创建时间
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TIME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Date</span> createTime<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 状态
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> status<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 上传用户编号
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> upUserId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 被@的用户编号
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> atUserId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 被@的用户名称
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TEXT_NAME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> atUserName<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 标题
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TEXT_TITLE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> title<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 文本（可存html信息）
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> text<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 扩展信息，可用JSON格式自行扩展
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> ext<span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已通过&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_ACCEPT <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;未审核&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_UNEXAMINED <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已回绝&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_REJECT <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <p>回复实体（MySQL版）：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+	 * 序列编号（id）
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnID</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> sequenceId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 回复replyid
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> replyId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 创建时间
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>TIME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Date</span> createTime<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 状态
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> status<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 回复用户 id
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> upUserId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 回复用户头像
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> upUserHead<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 回复用户名称
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> upUserName<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 目标用户 id
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> toUserId<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 目标用户 名称
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> toUserName<span class="token punctuation">;</span>
+<span class="token comment">/**
+	 * 文本（可存html信息）
+	 */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> text<span class="token punctuation">;</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>SHORT_TEXT<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> ext<span class="token punctuation">;</span>
+
+<span class="token comment">/////////////////////////////////////////////</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已通过&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_ACCEPT <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;未审核&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_UNEXAMINED <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><p>TableStore版：</p> <div class="language-java extra-class"><pre class="language-java"><code>分片编号，<span class="token function">MD5</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>，避免数据热点
+<span class="token operator">*</span><span class="token operator">/</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK1<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> _id<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 回复replyid
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK2<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> replyId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 序列编号（自增）
+ */</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK3<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">,</span> AUTO_INCREMENT <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> sequenceId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 创建时间
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Date</span> createTime<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 状态
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> status<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 回复用户 id
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> upUserId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 回复用户头像
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> upUserHead<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 回复用户名称
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> upUserName<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 目标用户 id
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> toUserId<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 目标用户 名称
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> toUserName<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 文本（可存html信息）
+ */</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> text<span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;未审核&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_UNEXAMINED <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;已通过&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_ACCEPT <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <p>点赞实体（TableStore）：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+  * 分片编号，MD5(id)，避免数据热点
+    */</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK1<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>STRING<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">String</span> _id<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 回复所属对象编号
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK2<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> ownerId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 用户id
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnID</span><span class="token punctuation">(</span>key <span class="token operator">=</span> <span class="token class-name">TSAnnID</span><span class="token punctuation">.</span><span class="token class-name">Key</span><span class="token punctuation">.</span>PK3<span class="token punctuation">,</span> type <span class="token operator">=</span> <span class="token class-name">PrimaryKeyType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> userId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 评价的值
+ */</span>
+<span class="token annotation punctuation">@TSAnnIndex</span><span class="token punctuation">(</span>type <span class="token operator">=</span> <span class="token class-name">FieldType</span><span class="token punctuation">.</span>LONG<span class="token punctuation">,</span> enableSortAndAgg <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span> store <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@TSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">TSAnnField</span><span class="token punctuation">.</span><span class="token class-name">ColumnType</span><span class="token punctuation">.</span>INTEGER<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> value<span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;赞&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> VALUE_PRAISE <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;踩&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_DISS <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><p>MySQL：</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+* 回复所属对象编号
+*/</span>
+<span class="token annotation punctuation">@RDSAnnID</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> ownerId<span class="token punctuation">;</span>
+<span class="token comment">/**
+ * 用户id
+ */</span>
+<span class="token annotation punctuation">@RDSAnnID</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>ID<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> userId<span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 评价的值
+ */</span>
+<span class="token annotation punctuation">@RDSAnnField</span><span class="token punctuation">(</span>column <span class="token operator">=</span> <span class="token class-name">RDSAnnField</span><span class="token punctuation">.</span>BYTE<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">Byte</span> value<span class="token punctuation">;</span>
+
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;赞&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> VALUE_PRAISE <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token annotation punctuation">@AnnDicField</span><span class="token punctuation">(</span>alias <span class="token operator">=</span> <span class="token string">&quot;踩&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Byte</span> STATUS_DISS <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><hr> <h2 id="实现思路"><a href="#实现思路" aria-hidden="true" class="header-anchor">#</a> 实现思路</h2> <h4 id="内容"><a href="#内容" aria-hidden="true" class="header-anchor">#</a> 内容</h4> <ul><li><p>内容就是除了普通的状态，标题，类型之外，标签使用json数组存储，data字段使用json对象存储</p></li> <li><p>音频，视频，图片都是使用了OSS对象存储上传，数据库对返回的地址进行存储</p></li> <li><p>其中文本内容使用了编辑器对文本进行处理</p></li> <li><p>关于编辑器：</p> <p>编辑器文档地址：https://www.kancloud.cn/wangfupeng/wangeditor3/335780</p> <p>编辑器注意事项：</p> <ol><li>插入的图片要点击100%，否则图片会显示不全</li></ol></li> <li><p>接口返回内容时应当返回点赞状态，点赞数量</p></li></ul> <h4 id="评论"><a href="#评论" aria-hidden="true" class="header-anchor">#</a> 评论</h4> <ul><li>评论目前是对内容下的评论</li> <li>获取某个内容下的评论应当返回该评论的点赞数量，该用户是否对该评论点过赞，该条评论下的回复，该条评论下的回复的点赞数量及用户是否对该回复点过赞，用户名称，用户头像，发布时间</li> <li>根据前端设计要求看是否返回该评论下的回复数量</li></ul> <h4 id="回复"><a href="#回复" aria-hidden="true" class="header-anchor">#</a> 回复</h4> <ul><li>回复是对评论下的回复</li> <li>获取回复也是一样，返回的每一条回复也是要包含点赞数量，用户是否点赞状态，用户名称，用户头像，发布时间</li></ul> <h2 id="相关代码"><a href="#相关代码" aria-hidden="true" class="header-anchor">#</a> 相关代码</h2> <ul><li>TableStore</li></ul> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/*
+* 查询帖子评论详情
+*/</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getPosting</span><span class="token punctuation">(</span><span class="token class-name">Long</span> id<span class="token punctuation">,</span> <span class="token class-name">Long</span> userId<span class="token punctuation">,</span> <span class="token keyword">boolean</span> sort<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+    <span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn <span class="token operator">=</span> ds<span class="token punctuation">.</span><span class="token function">getConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">JSONArray</span> ja <span class="token operator">=</span> postingRepository<span class="token punctuation">.</span><span class="token function">getPosting</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        postingRepository<span class="token punctuation">.</span><span class="token function">setShareOrPageview</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span> <span class="token string">&quot;pageview&quot;</span><span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">JSONArray</span> returnJson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">JSONObject</span> tempJson <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> ja<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            tempJson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name">Long</span> postingId <span class="token operator">=</span> ja<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;postingId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;posting&quot;</span><span class="token punctuation">,</span> ja<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;appraiseCount&quot;</span><span class="token punctuation">,</span> <span class="token function">getAppraiseCount</span><span class="token punctuation">(</span>postingId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;isAppraise&quot;</span><span class="token punctuation">,</span> <span class="token function">getAppraiseStatus</span><span class="token punctuation">(</span>postingId<span class="token punctuation">,</span> userId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;isFavorite&quot;</span><span class="token punctuation">,</span> <span class="token function">getFavoriteStatus</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span>userId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            returnJson<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>tempJson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> returnJson<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*
+ * 获取评论
+ */</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getReplys</span><span class="token punctuation">(</span><span class="token class-name">Long</span> ownerId<span class="token punctuation">,</span> <span class="token class-name">Long</span> userId<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> sort<span class="token punctuation">,</span> <span class="token class-name">Long</span> upUserId<span class="token punctuation">,</span> <span class="token class-name">Long</span> toUserId<span class="token punctuation">,</span> <span class="token class-name">Byte</span> status<span class="token punctuation">,</span>
+		<span class="token keyword">int</span> count<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+	<span class="token class-name">Query</span> query <span class="token operator">=</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Bool</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span>BOOL_TYPE_AND<span class="token punctuation">,</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;ownerId&quot;</span><span class="token punctuation">,</span> ownerId<span class="token punctuation">)</span><span class="token punctuation">,</span>
+			TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;upUserId&quot;</span><span class="token punctuation">,</span> upUserId<span class="token punctuation">)</span><span class="token punctuation">,</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;status&quot;</span><span class="token punctuation">,</span> status<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">SearchQuery</span> searchQuery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SearchQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery <span class="token operator">=</span> <span class="token function">setTEXPLimitSort</span><span class="token punctuation">(</span>searchQuery<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">,</span> sort<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery<span class="token punctuation">.</span><span class="token function">setQuery</span><span class="token punctuation">(</span>query<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">JSONArray</span> ja <span class="token operator">=</span> replyRepository<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> searchQuery<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getJSONArray</span><span class="token punctuation">(</span><span class="token string">&quot;list&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>ja<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token class-name">JSONArray</span> returnJson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">JSONObject</span> tempJson <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+	<span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Long</span><span class="token punctuation">&gt;</span></span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Long</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> ja<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		tempJson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">Long</span> replyId <span class="token operator">=</span> ja<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;sequenceId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">JSONArray</span> comment <span class="token operator">=</span> <span class="token function">getComments</span><span class="token punctuation">(</span>replyId<span class="token punctuation">,</span> sort<span class="token punctuation">,</span> toUserId<span class="token punctuation">,</span> userId<span class="token punctuation">,</span> status<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;reply&quot;</span><span class="token punctuation">,</span> ja<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;tempUserId&quot;</span><span class="token punctuation">,</span> ja<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;upUserId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;appraiseCount&quot;</span><span class="token punctuation">,</span> <span class="token function">getAppraiseCount</span><span class="token punctuation">(</span>replyId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;isAppraise&quot;</span><span class="token punctuation">,</span> <span class="token function">getAppraiseStatus</span><span class="token punctuation">(</span>replyId<span class="token punctuation">,</span> userId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;comment&quot;</span><span class="token punctuation">,</span> comment<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>ja<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;upUserId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		returnJson<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>tempJson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token function">getReplyUser</span><span class="token punctuation">(</span>returnJson<span class="token punctuation">,</span> set<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 查询评该论信息的发布者信息 */</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getReplyUser</span><span class="token punctuation">(</span><span class="token class-name">JSONArray</span> json<span class="token punctuation">,</span> <span class="token class-name">Set</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Long</span><span class="token punctuation">&gt;</span></span> set<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token punctuation">)</span>
+		<span class="token keyword">throws</span> <span class="token class-name">SQLException</span><span class="token punctuation">,</span> <span class="token class-name">ServerException</span> <span class="token punctuation">{</span>
+	<span class="token class-name">DurianUser</span> u <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+	<span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn <span class="token operator">=</span> ds<span class="token punctuation">.</span><span class="token function">getConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DurianUser</span><span class="token punctuation">&gt;</span></span> user <span class="token operator">=</span> userRepository<span class="token punctuation">.</span><span class="token function">getList</span><span class="token punctuation">(</span>conn<span class="token punctuation">,</span> EXP<span class="token punctuation">.</span><span class="token function">INS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span>EXP<span class="token punctuation">.</span><span class="token function">INS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">IN</span><span class="token punctuation">(</span><span class="token string">&quot;userId&quot;</span><span class="token punctuation">,</span> set<span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> count<span class="token punctuation">,</span>
+				offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> length <span class="token operator">=</span> json<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> index <span class="token operator">=</span> user<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> index<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>user<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>userId<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;tempUserId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					u <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DurianUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					u<span class="token punctuation">.</span>userId <span class="token operator">=</span> user<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>userId<span class="token punctuation">;</span>
+					u<span class="token punctuation">.</span>userName <span class="token operator">=</span> user<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>userName<span class="token punctuation">;</span>
+					u<span class="token punctuation">.</span>userHead <span class="token operator">=</span> user<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>userHead<span class="token punctuation">;</span>
+					json<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span> u<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					<span class="token keyword">break</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> json<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*
+ * 获取二级评论回复
+ */</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getComments</span><span class="token punctuation">(</span><span class="token class-name">Long</span> replyId<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> sort<span class="token punctuation">,</span> <span class="token class-name">Long</span> toUserId<span class="token punctuation">,</span> <span class="token class-name">Long</span> userId<span class="token punctuation">,</span> <span class="token class-name">Byte</span> status<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token punctuation">,</span>
+		<span class="token keyword">int</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+	<span class="token class-name">Query</span> query <span class="token operator">=</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Bool</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span>BOOL_TYPE_AND<span class="token punctuation">,</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;replyId&quot;</span><span class="token punctuation">,</span> replyId<span class="token punctuation">)</span><span class="token punctuation">,</span>
+			TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;toUserId&quot;</span><span class="token punctuation">,</span> toUserId<span class="token punctuation">)</span><span class="token punctuation">,</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;status&quot;</span><span class="token punctuation">,</span> status<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">SearchQuery</span> searchQuery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SearchQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery <span class="token operator">=</span> <span class="token function">setTEXPLimitSort</span><span class="token punctuation">(</span>searchQuery<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">,</span> sort<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery<span class="token punctuation">.</span><span class="token function">setQuery</span><span class="token punctuation">(</span>query<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">JSONObject</span> j <span class="token operator">=</span> commentRepository<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> searchQuery<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">JSONArray</span> ja <span class="token operator">=</span> j<span class="token punctuation">.</span><span class="token function">getJSONArray</span><span class="token punctuation">(</span><span class="token string">&quot;list&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">String</span> commentCount <span class="token operator">=</span> j<span class="token punctuation">.</span><span class="token function">getString</span><span class="token punctuation">(</span><span class="token string">&quot;totalCount&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">JSONArray</span> returnJson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">JSONObject</span> tempJson <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+	<span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn <span class="token operator">=</span> ds<span class="token punctuation">.</span><span class="token function">getConnection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> ja<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			tempJson <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JSONObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token class-name">Long</span> commentId <span class="token operator">=</span> ja<span class="token punctuation">.</span><span class="token function">getJSONObject</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;sequenceId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;commentInfo&quot;</span><span class="token punctuation">,</span> ja<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;appraiseCount&quot;</span><span class="token punctuation">,</span> <span class="token function">getAppraiseCount</span><span class="token punctuation">(</span>commentId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;isAppraise&quot;</span><span class="token punctuation">,</span> <span class="token function">getAppraiseStatus</span><span class="token punctuation">(</span>commentId<span class="token punctuation">,</span> userId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			tempJson<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;totalCount&quot;</span><span class="token punctuation">,</span> commentCount<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			returnJson<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>tempJson<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> returnJson<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* 获取点赞数 */</span>
+<span class="token keyword">public</span> <span class="token class-name">Long</span> <span class="token function">getAppraiseCount</span><span class="token punctuation">(</span><span class="token class-name">Long</span> ownerId<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+	<span class="token class-name">SearchQuery</span> searchQuery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SearchQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery<span class="token punctuation">.</span><span class="token function">setGetTotalCount</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">Query</span> query <span class="token operator">=</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Bool</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span>BOOL_TYPE_AND<span class="token punctuation">,</span> <span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;ownerId&quot;</span><span class="token punctuation">,</span> ownerId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery<span class="token punctuation">.</span><span class="token function">setQuery</span><span class="token punctuation">(</span>query<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> appraiseRepository<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> searchQuery<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;totalCount&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+<span class="token comment">/* 获取点赞状态 */</span>
+<span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">getAppraiseStatus</span><span class="token punctuation">(</span><span class="token class-name">Long</span> ownerId<span class="token punctuation">,</span> <span class="token class-name">Long</span> userId<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+	<span class="token class-name">SearchQuery</span> searchQuery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SearchQuery</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery<span class="token punctuation">.</span><span class="token function">setGetTotalCount</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">Query</span> query <span class="token operator">=</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Bool</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span>BOOL_TYPE_AND<span class="token punctuation">,</span>
+			<span class="token class-name">Arrays</span><span class="token punctuation">.</span><span class="token function">asList</span><span class="token punctuation">(</span>TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;ownerId&quot;</span><span class="token punctuation">,</span> ownerId<span class="token punctuation">)</span><span class="token punctuation">,</span> TEXP<span class="token punctuation">.</span><span class="token class-name">Term</span><span class="token punctuation">(</span><span class="token string">&quot;userId&quot;</span><span class="token punctuation">,</span> userId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	searchQuery<span class="token punctuation">.</span><span class="token function">setQuery</span><span class="token punctuation">(</span>query<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">Long</span> count <span class="token operator">=</span> appraiseRepository<span class="token punctuation">.</span><span class="token function">search</span><span class="token punctuation">(</span>client<span class="token punctuation">,</span> searchQuery<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getLong</span><span class="token punctuation">(</span><span class="token string">&quot;totalCount&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">!=</span> <span class="token keyword">null</span> <span class="token operator">&amp;&amp;</span> count <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>MySQL</li></ul> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">//获取评论列表</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getReplyList</span><span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn<span class="token punctuation">,</span><span class="token class-name">Long</span> id<span class="token punctuation">,</span><span class="token class-name">Long</span> upUserId<span class="token punctuation">,</span><span class="token class-name">String</span> status<span class="token punctuation">,</span><span class="token class-name">Boolean</span> orderDesc<span class="token punctuation">,</span><span class="token class-name">Long</span> toUserId<span class="token punctuation">,</span><span class="token class-name">Integer</span> count<span class="token punctuation">,</span> <span class="token class-name">Integer</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServerException</span> <span class="token punctuation">{</span>
+		<span class="token class-name">StringBuffer</span> sql <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token string">&quot;SELECT reply.*,user.id,user.head,user.name,truncate(con.id,0) contentId,con.type,con.title contentTitle,(SELECT count(1) FROM tb_zskp_appraise WHERE owner_id = &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;(reply.sequence_id)&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;) as appraiseCount FROM tb_zskt_reply reply INNER JOIN tb_zskt_user user ON reply.up_user_id = user.id INNER JOIN tb_cms_content con on reply.owner_id = con.id WHERE &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		 
+		<span class="token class-name">EXP</span> exp <span class="token operator">=</span> EXP<span class="token punctuation">.</span><span class="token function">INS</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">key</span><span class="token punctuation">(</span><span class="token string">&quot;owner_id&quot;</span><span class="token punctuation">,</span> id<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">andKey</span><span class="token punctuation">(</span><span class="token string">&quot;reply.up_user_id&quot;</span><span class="token punctuation">,</span> upUserId<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">andKey</span><span class="token punctuation">(</span><span class="token string">&quot;reply.to_user_id&quot;</span><span class="token punctuation">,</span> toUserId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>orderDesc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			exp<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;ORDER BY create_time DESC&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+			exp<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;ORDER BY create_time asc&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		exp<span class="token punctuation">.</span><span class="token function">toSQL</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sqlGetJSONArray</span><span class="token punctuation">(</span>conn<span class="token punctuation">,</span> sql<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> params<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token comment">//获取评论详情</span>
+	<span class="token keyword">public</span> <span class="token class-name">JSONObject</span> <span class="token function">getReply</span><span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn<span class="token punctuation">,</span><span class="token class-name">Long</span> id<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServerException</span> <span class="token punctuation">{</span>
+		<span class="token class-name">StringBuffer</span> sql <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token string">&quot;SELECT reply.*,user.id,user.head,user.name ,(SELECT count(1) FROM tb_zskp_appraise WHERE owner_id = &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;(reply.sequence_id)&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;) as appraiseCount FROM tb_zskt_reply reply LEFT JOIN tb_zskt_user user ON reply.up_user_id = user.id WHERE reply.sequence_id = &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sqlGetJSONObject</span><span class="token punctuation">(</span>conn<span class="token punctuation">,</span> sql<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token comment">//根据状态获取评论</span>
+	<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getReplyListByStatus</span><span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn<span class="token punctuation">,</span><span class="token class-name">Integer</span> count<span class="token punctuation">,</span> <span class="token class-name">Integer</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServerException</span> <span class="token punctuation">{</span>
+		<span class="token class-name">StringBuffer</span> sql <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token string">&quot;SELECT  con.id conId,trim(con.title) contitle,re.*,user.id,user.name FROM tb_zskt_reply re LEFT JOIN tb_cms_content con ON re.owner_id = con.id LEFT JOIN tb_zskt_user user ON re.up_user_id = user.id WHERE re.status = 1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sqlGetJSONArray</span><span class="token punctuation">(</span>conn<span class="token punctuation">,</span> sql<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> params<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+</code></pre></div><div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">//获取回复列表</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getCommentList</span><span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn<span class="token punctuation">,</span><span class="token class-name">Long</span> id<span class="token punctuation">,</span><span class="token class-name">Long</span> upUserId<span class="token punctuation">,</span><span class="token class-name">String</span> status<span class="token punctuation">,</span><span class="token class-name">Boolean</span> orderDesc<span class="token punctuation">,</span><span class="token class-name">Long</span> toUserId<span class="token punctuation">,</span><span class="token class-name">Integer</span> count<span class="token punctuation">,</span> <span class="token class-name">Integer</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServerException</span> <span class="token punctuation">{</span>
+		<span class="token class-name">StringBuffer</span> sql <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token string">&quot;SELECT comment.*, user.id,user.`name`,user.head ,(SELECT count(1) FROM tb_zskp_appraise WHERE owner_id = &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;(comment.sequence_id)&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		sql<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;) as appraiseCount from tb_zskt_comment comment left join tb_zskt_user user on comment.up_user_id = user.id where &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token class-name">EXP</span> exp <span class="token operator">=</span> EXP<span class="token punctuation">.</span><span class="token function">INS</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">key</span><span class="token punctuation">(</span><span class="token string">&quot;reply_id&quot;</span><span class="token punctuation">,</span> id<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">andKey</span><span class="token punctuation">(</span><span class="token string">&quot;up_user_id&quot;</span><span class="token punctuation">,</span> upUserId<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">andKey</span><span class="token punctuation">(</span><span class="token string">&quot;to_user_id&quot;</span><span class="token punctuation">,</span> toUserId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>orderDesc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			exp<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;ORDER BY create_time DESC&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+			exp<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&quot;ORDER BY create_time ASC&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		exp<span class="token punctuation">.</span><span class="token function">toSQL</span><span class="token punctuation">(</span>sql<span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sqlGetJSONArray</span><span class="token punctuation">(</span>conn<span class="token punctuation">,</span> sql<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> params<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token comment">//根据状态获取回复</span>
+<span class="token keyword">public</span> <span class="token class-name">JSONArray</span> <span class="token function">getCommentListByStatus</span><span class="token punctuation">(</span><span class="token class-name">DruidPooledConnection</span> conn<span class="token punctuation">,</span><span class="token class-name">Integer</span> count<span class="token punctuation">,</span> <span class="token class-name">Integer</span> offset<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ServerException</span> <span class="token punctuation">{</span>
+	<span class="token class-name">StringBuffer</span> sql <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token string">&quot;SELECT com.*,us.id,us.name FROM tb_zskt_comment com LEFT JOIN tb_zskt_user us on com.up_user_id =us.id  WHERE com.status = 1 &quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> params <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">sqlGetJSONArray</span><span class="token punctuation">(</span>conn<span class="token punctuation">,</span> sql<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> params<span class="token punctuation">,</span> count<span class="token punctuation">,</span> offset<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h1 id="微信登录"><a href="#微信登录" aria-hidden="true" class="header-anchor">#</a> 微信登录</h1> <h2 id="app端"><a href="#app端" aria-hidden="true" class="header-anchor">#</a> APP端</h2> <ol><li>先去微信开放平台申请账号，之后向微信申请一个应用，成功以后会获得appid与appserkey</li> <li>获得以上2个数据后使用HBuild打包把数据填入HBuild，调用uniapp的方法前端就可调用微信登陆获取用户信息与openid</li></ol> <p>注意事项：</p> <ul><li>在微信开放平台申请安卓应用应当先生成一个安卓证书，申请的时候需要用到，</li> <li>申请安卓证书教程附上教程网站：https://ask.dcloud.net.cn/article/35777</li> <li>申请时把安卓证书的相关参数填入</li> <li>打包时也要使用自有证书打包，填入证书相关参数，打包完便可使用微信登陆功能</li></ul> <h2 id="小程序端"><a href="#小程序端" aria-hidden="true" class="header-anchor">#</a> 小程序端</h2> <ol><li>先去微信公众平台申请一个小程序，获得appid等相关参数</li> <li>填入HBuilder开发工具运行，调用uniapp方法可调起微信登录，前端可获取code，前端将code传到后台</li> <li>后台code请求微信服务器，微信服务器返回openid，后台openid传到前端，前端可凭openid获取用户信息</li> <li>信息传入后台完成微信登录</li></ol> <h1 id="手机验证码登录"><a href="#手机验证码登录" aria-hidden="true" class="header-anchor">#</a> 手机验证码登录</h1> <ol><li>搞个阿里云账号，去阿里云短信服务充值一波，阿里云短信控制台创建一个短信签名，创建短信模板</li> <li>阿里云短信服务java SDK引入项目</li> <li>在代码中填入阿里云的2个密钥</li> <li>提供发送短信接口，把验证码及手机号码做缓存，方便后续判断</li> <li>对登录的验证码，手机号码做判断</li></ol> <ul><li><p>发送验证码相关代码</p> <div class="language-java extra-class"><pre class="language-java"><code><span class="token comment">/**
+ * 发送短信验证码
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SendSms</span> <span class="token punctuation">{</span>
+	 <span class="token comment">//产品名称:云通信短信API产品,开发者无需替换</span>
+    <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> product <span class="token operator">=</span> <span class="token string">&quot;Dysmsapi&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">//产品域名,开发者无需替换</span>
+    <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> domain <span class="token operator">=</span> <span class="token string">&quot;dysmsapi.aliyuncs.com&quot;</span><span class="token punctuation">;</span>
+
+    <span class="token comment">//SMS_165341505注册</span>
+    <span class="token comment">// TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)</span>
+    <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> accessKeyId <span class="token operator">=</span> <span class="token string">&quot;？？？？？&quot;</span><span class="token punctuation">;</span>
+    <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> accessKeySecret <span class="token operator">=</span> <span class="token string">&quot;？？？？？&quot;</span><span class="token punctuation">;</span>
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">SendSmsResponse</span> <span class="token function">sendSms</span><span class="token punctuation">(</span><span class="token class-name">String</span> phone<span class="token punctuation">,</span><span class="token keyword">int</span> num<span class="token punctuation">,</span><span class="token class-name">String</span> <span class="token class-name">TemplateCod</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">ClientException</span> <span class="token punctuation">{</span>
+        <span class="token comment">//可自助调整超时时间</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">&quot;sun.net.client.defaultConnectTimeout&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">setProperty</span><span class="token punctuation">(</span><span class="token string">&quot;sun.net.client.defaultReadTimeout&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;10000&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//初始化acsClient,暂不支持region化</span>
+        <span class="token class-name">IClientProfile</span> profile <span class="token operator">=</span> <span class="token class-name">DefaultProfile</span><span class="token punctuation">.</span><span class="token function">getProfile</span><span class="token punctuation">(</span><span class="token string">&quot;cn-hangzhou&quot;</span><span class="token punctuation">,</span> accessKeyId<span class="token punctuation">,</span> accessKeySecret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">DefaultProfile</span><span class="token punctuation">.</span><span class="token function">addEndpoint</span><span class="token punctuation">(</span><span class="token string">&quot;cn-hangzhou&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;cn-hangzhou&quot;</span><span class="token punctuation">,</span> product<span class="token punctuation">,</span> domain<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">IAcsClient</span> acsClient <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DefaultAcsClient</span><span class="token punctuation">(</span>profile<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//组装请求对象-具体描述见控制台-文档部分内容</span>
+        <span class="token class-name">SendSmsRequest</span> request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SendSmsRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//必填:待发送手机号</span>
+        request<span class="token punctuation">.</span><span class="token function">setPhoneNumbers</span><span class="token punctuation">(</span>phone<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//必填:短信签名-可在短信控制台中找到</span>
+        request<span class="token punctuation">.</span><span class="token function">setSignName</span><span class="token punctuation">(</span><span class="token string">&quot;？？？&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//必填:短信模板-可在短信控制台中找到</span>
+        request<span class="token punctuation">.</span><span class="token function">setTemplateCode</span><span class="token punctuation">(</span><span class="token class-name">TemplateCod</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//可选:模板中的变量替换JSON串,如模板内容为&quot;亲爱的${name},您的验证码为${code}&quot;时,此处的值为</span>
+        request<span class="token punctuation">.</span><span class="token function">setTemplateParam</span><span class="token punctuation">(</span><span class="token string">&quot;{\&quot;code\&quot;:\&quot;&quot;</span><span class="token operator">+</span>num<span class="token operator">+</span><span class="token string">&quot;\&quot;}&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//选填-上行短信扩展码(无特殊需求用户请忽略此字段)</span>
+        <span class="token comment">//request.setSmsUpExtendCode(&quot;90997&quot;);</span>
+        <span class="token comment">//可选:outId为提供给业务方扩展字段,最终在短信回执消息中将此值带回给调用者</span>
+        request<span class="token punctuation">.</span><span class="token function">setOutId</span><span class="token punctuation">(</span><span class="token string">&quot;yourOutId&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">//hint 此处可能会抛出异常，注意catch</span>
+        <span class="token class-name">SendSmsResponse</span> sendSmsResponse <span class="token operator">=</span> acsClient<span class="token punctuation">.</span><span class="token function">getAcsResponse</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> sendSmsResponse<span class="token punctuation">;</span>
+	 <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><p>阿里云短信SDK</p> <div class="language-xml extra-class"><pre class="language-xml"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.aliyun<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>aliyun-java-sdk-core<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>4.4.5<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.aliyun<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>aliyun-java-sdk-dysmsapi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.1.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></li></ul></li></ul></div> <!----> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/document/aha/back/example.html" class="prev">
+          小红椒后端交接文档
+        </a></span> <!----></p></div> </main> <div class="valine-wrapper" data-v-5029e45b><div id="valine" data-v-5029e45b></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-cd623d78 data-v-cd623d78><i class="iconfont reco-up" data-v-cd623d78></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/document/assets/js/app.3d2e3ff9.js" defer></script><script src="/document/assets/js/3.b3d74ef6.js" defer></script><script src="/document/assets/js/1.548067c8.js" defer></script><script src="/document/assets/js/16.999a1852.js" defer></script>
+  </body>
+</html>
